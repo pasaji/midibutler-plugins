@@ -18,8 +18,8 @@ Then run `/mcp`, choose the midibutler server and choose Authenticate.
 
 ## Claude app (claude.ai and desktop)
 
-Download the zip from https://midibutler.com/plugins/midibutler.zip, then open Customize > Plugins > Add > Upload
-plugin. On the plugin's Connectors tab, choose Connect and sign in.
+Open Customize > Plugins > Add > Add marketplace > Add from a repository, enter pasaji/midibutler-plugins,
+then add the MIDI Butler plugin from Discover. On the plugin's Connectors tab, choose Connect and sign in.
 
 ## Codex
 
