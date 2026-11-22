@@ -1,0 +1,15 @@
+{
+  "name": "midibutler",
+  "description": "MIDI Butler plugins for AI assistants",
+  "owner": {
+    "name": "MIDI Butler",
+    "url": "https://midibutler.com"
+  },
+  "plugins": [
+    {
+      "name": "midibutler",
+      "description": "Create and send settings for your hardware MIDI instruments through MIDI Butler. Adds the MIDI Butler connection and a skill that teaches your assistant how to use it safely.",
+      "source": "./plugins/midibutler"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "name": "midibutler",
+  "interface": {
+    "displayName": "MIDI Butler"
+  },
+  "plugins": [
+    {
+      "name": "midibutler",
+      "source": {
+        "source": "local",
+        "path": "./codex/midibutler"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

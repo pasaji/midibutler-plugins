@@ -1,0 +1,7 @@
+{
+  "mcpServers": {
+    "midibutler": {
+      "url": "https://psaxiiqwtwrkomtkwtvv.supabase.co/functions/v1/mcp"
+    }
+  }
+}
