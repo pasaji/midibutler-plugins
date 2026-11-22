@@ -16,5 +16,18 @@
     "sysex"
   ],
   "skills": "./skills/",
-  "mcpServers": "./.mcp.json"
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "MIDI Butler",
+    "shortDescription": "Create and send settings for your hardware MIDI instruments.",
+    "longDescription": "Connects Codex to your MIDI Butler library. It researches your instrument's MIDI documentation, saves settings as versions you can tweak in the app, and asks your browser to send them. SysEx always needs your approval in the browser.",
+    "developerName": "MIDI Butler",
+    "category": "Productivity",
+    "websiteURL": "https://midibutler.com",
+    "defaultPrompt": [
+      "Make a short, plucky percussive sound on my Nord Drum 3P and save it.",
+      "List my MIDI Butler sounds."
+    ],
+    "brandColor": "#33442a"
+  }
 }
