@@ -7,7 +7,30 @@ Signing in uses your MIDI Butler account in the browser. There is no key to copy
 MIDI Butler has no device knowledge of its own. SysEx always needs your approval in the browser, and
 a send only means your browser wrote to its MIDI output, not that the device accepted it.
 
-## Claude Code
+Claude and Codex each come as an app and as a terminal tool. Pick the one you actually use.
+
+## Apps
+
+### Claude app (claude.ai and the Claude desktop app)
+
+Open Customize > Plugins > Add > Add marketplace > Add from a repository, enter pasaji/midibutler-plugins,
+then add the MIDI Butler plugin from Discover. On the plugin's Connectors tab, choose Connect and sign in.
+
+Without the plugin: Settings > Connectors > Add custom connector, with the address
+https://psaxiiqwtwrkomtkwtvv.supabase.co/functions/v1/mcp.
+
+### ChatGPT app (the ChatGPT desktop app, Codex mode)
+
+Settings > MCP servers > Add server, choose Streamable HTTP, name it MIDI Butler and enter the address
+https://psaxiiqwtwrkomtkwtvv.supabase.co/functions/v1/mcp. Save, restart, then choose Authenticate and sign in.
+
+The ChatGPT app and Codex CLI share their Codex settings, so the plugin installed with the Codex CLI
+commands below may also appear under Plugins after you restart the app. The ChatGPT app steps are not
+yet verified.
+
+## Terminal tools
+
+### Claude Code
 
 ```
 claude plugin marketplace add pasaji/midibutler-plugins
@@ -16,12 +39,7 @@ claude plugin install midibutler@midibutler
 
 Then run `/mcp`, choose the midibutler server and choose Authenticate.
 
-## Claude app (claude.ai and desktop)
-
-Open Customize > Plugins > Add > Add marketplace > Add from a repository, enter pasaji/midibutler-plugins,
-then add the MIDI Butler plugin from Discover. On the plugin's Connectors tab, choose Connect and sign in.
-
-## Codex
+### Codex CLI
 
 ```
 codex plugin marketplace add pasaji/midibutler-plugins
