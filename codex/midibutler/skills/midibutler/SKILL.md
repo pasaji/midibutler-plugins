@@ -73,7 +73,7 @@ The numbers above only show the format. They are not a recipe for any device.
 1. `list_sessions` shows the user's browser windows, newest first. If there is exactly one, use it. If there are several, use the newest and tell the user which one you used. Closed windows stay listed for up to 12 hours, so the newest is usually the open one. Do not make the user identify a window.
 2. Before you request, remind the user to connect a MIDI output in the app, keep that window open and in the foreground, and turn **Live MIDI** on. Without Live MIDI the request is not delivered, and they can send the saved version from the app themselves instead.
 3. `request_send` with `version_id`, `session_id` and a **new UUID** as `request_id`. Reuse the same `request_id` for retries so the request is not duplicated. A pending request expires after 60 seconds and is not replayed.
-4. `get_delivery` reports the state.
+4. Right after `request_send`, call `get_delivery` with `wait_seconds` 10. The browser picks a request up within a few seconds, so "pending" a moment after queueing is normal: wait for it instead of reporting it. Only if it is still pending after the wait, tell the user and ask them to check the window.
 
 Be exact about the result:
 
