@@ -1,5 +1,6 @@
 {
   "name": "midibutler",
+  "displayName": "MIDI Butler",
   "version": "0.1.0",
   "description": "Create and send settings for your hardware MIDI instruments through MIDI Butler. Adds the MIDI Butler connection and a skill that teaches your assistant how to use it safely.",
   "author": {
@@ -8,5 +9,11 @@
   },
   "homepage": "https://midibutler.com",
   "license": "MIT",
-  "keywords": ["midi", "synth", "music", "hardware", "sysex"]
+  "keywords": [
+    "midi",
+    "synth",
+    "music",
+    "hardware",
+    "sysex"
+  ]
 }

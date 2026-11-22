@@ -14,7 +14,9 @@ Claude and Codex each come as an app and as a terminal tool. Pick the one you ac
 ### Claude app (claude.ai and the Claude desktop app)
 
 Open Customize > Plugins > Add > Add marketplace > Add from a repository, enter pasaji/midibutler-plugins,
-then add the MIDI Butler plugin from Discover. On the plugin's Connectors tab, choose Connect and sign in.
+then open the MIDI Butler plugin under Discover and choose Add to this computer. Claude warns that plugins
+may run code; this plugin contains only the MIDI Butler address and instructions, no code. If the plugin's
+Connectors tab shows MIDI Butler as not connected, choose Connect and sign in.
 
 Without the plugin: Settings > Connectors > Add custom connector, with the address
 https://psaxiiqwtwrkomtkwtvv.supabase.co/functions/v1/mcp.
