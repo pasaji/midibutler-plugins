@@ -22,8 +22,8 @@ https://psaxiiqwtwrkomtkwtvv.supabase.co/functions/v1/mcp.
 ### ChatGPT app (the ChatGPT desktop app, Codex mode)
 
 Open Plugins > Add > Add a marketplace, enter pasaji/midibutler-plugins as the Source and leave Git ref and
-Sparse paths empty. Install MIDI Butler from the plugin list. If it asks you to sign in, choose Authenticate and sign in; if you
-have signed in before on this computer it may connect without asking.
+Sparse paths empty. Install MIDI Butler from the plugin list with the plus button. A MIDI Butler page opens in your browser where you
+sign in and press Allow; if you have signed in before on this computer it may install without asking.
 
 If you already added the plugin with the Codex CLI commands below, the ChatGPT app shares those
 settings and shows it too.
@@ -31,8 +31,7 @@ settings and shows it too.
 Without the plugin: Plugins > Add > Add custom MCP server, with the address
 https://psaxiiqwtwrkomtkwtvv.supabase.co/functions/v1/mcp.
 
-Adding the marketplace and installing the plugin are verified. What a first-time sign-in looks like in the
-ChatGPT app is not yet verified.
+Adding the marketplace, installing the plugin and the sign-in page that opens during installation are verified.
 
 ## Terminal tools
 
